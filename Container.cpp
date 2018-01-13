@@ -185,7 +185,7 @@ pair<int, int> Container<adjacencyListNode<DistanceType>, DistanceType>::findClo
     {
         for (int j = 0; j < mPoints.size(); j++)
         {
-            if (shortestPaths[i][j] <= lowestDistanceFound)
+            if (i != j && shortestPaths[i][j] <= lowestDistanceFound)
             {
                 lowestDistanceFound = shortestPaths[i][j];
                 closestPairFound.first = i;
